@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-03-12T06:57:38.832Z</updated>
+  <updated>2022-03-14T14:09:45.296Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Rust学习(一)：猜数字游戏</title>
+    <link href="http://example.com/2022/03/14/Rust%E5%AD%A6%E4%B9%A0(%E4%B8%80)/"/>
+    <id>http://example.com/2022/03/14/Rust%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</id>
+    <published>2022-03-14T14:00:28.209Z</published>
+    <updated>2022-03-14T14:09:45.296Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一-Rust安装"><a href="#一-Rust安装" class="headerlink" title="一 Rust安装"></a>一 Rust安装</h2><p>Rust安装极为简单，先下载rustup</p><p><img src="https://img.yangcc.top/img/image-20220314220250790.png" alt="image-20220314220250790"></p><p>之后使用命令下载：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl --proto <span class="string">&#x27;=https&#x27;</span> --tlsv1.2 -sSf https://sh.rustup.rs | sh</span><br></pre></td></tr></table></figure><p>在vscode下载插件<code>rust-analyzer</code>即可快速开发</p><p><img src="https://img.yangcc.top/img/image-20220314220452099.png" alt="image-20220314220452099"></p><h2 id="二-cargo"><a href="#二-cargo" class="headerlink" title="二 cargo"></a>二 cargo</h2><p>cargo就是rust的包管理工具，与npm,maven等是一样的，一般rustup来安装rust会自带cargo，常见命令如下</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建一个catgo项目</span></span><br><span class="line">cargo new 项目</span><br><span class="line"><span class="comment"># 编译和执行结果，可以用来检验是否编写错误</span></span><br><span class="line">cargo run </span><br><span class="line"><span class="comment"># 发布的构建，编译会优化，代码更快，但是编译时间更长</span></span><br><span class="line">cargo build --release</span><br><span class="line"><span class="comment"># 普通的构建</span></span><br><span class="line">cargo build</span><br></pre></td></tr></table></figure><h2 id="三-猜数字游戏"><a href="#三-猜数字游戏" class="headerlink" title="三 猜数字游戏"></a>三 猜数字游戏</h2><figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> rand::Rng;</span><br><span class="line"><span class="keyword">use</span> std::cmp::Ordering; <span class="comment">//Ordering是一个枚举类型</span></span><br><span class="line"><span class="keyword">use</span> std::io; <span class="comment">//Rng是一个trait 可以认为是接口</span></span><br><span class="line">             <span class="comment">//rust默认会倒入prelude这个模块</span></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;猜一个数字&quot;</span>);</span><br><span class="line">    <span class="comment">//i32 u32 i64 都是整形</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">number</span> = rand::<span class="title function_ invoke__">thread_rng</span>().<span class="title function_ invoke__">gen_range</span>(<span class="number">1</span>..<span class="number">101</span>);</span><br><span class="line">    <span class="comment">// loop表示无限循环</span></span><br><span class="line">    <span class="keyword">loop</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">guess</span> = String::<span class="title function_ invoke__">new</span>();</span><br><span class="line">        <span class="comment">// io函数读取输  使用expect方法，表示如果result是err则执行</span></span><br><span class="line">        io::<span class="title function_ invoke__">stdin</span>().<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> guess).<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取行&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//将字符串转为整形 parse方法返回中为Result</span></span><br><span class="line">        <span class="comment">// 隐藏shadow 隐藏重名的旧变量，从18行开始，变量guess类型就变了</span></span><br><span class="line">        <span class="keyword">let</span> <span class="variable">guess</span>: <span class="type">u32</span> = <span class="keyword">match</span> guess.<span class="title function_ invoke__">trim</span>().<span class="title function_ invoke__">parse</span>() &#123;</span><br><span class="line">            <span class="title function_ invoke__">Ok</span>(num) =&gt; num,</span><br><span class="line">            <span class="comment">//_：此通配符表示不关心这个值</span></span><br><span class="line">            <span class="title function_ invoke__">Err</span>(_) =&gt; <span class="keyword">continue</span>,</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;你猜测的数是：&#123;&#125;&quot;</span>, guess);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//match表达式：可以让我们根据 枚举值选择不同的操作，就相当于if else</span></span><br><span class="line">        <span class="comment">//cmp就是compere，比较的意思</span></span><br><span class="line">        <span class="keyword">match</span> guess.<span class="title function_ invoke__">cmp</span>(&amp;number) &#123;</span><br><span class="line">            <span class="comment">//三个枚举分别表示小大等</span></span><br><span class="line">            Ordering::Less =&gt; <span class="built_in">println!</span>(<span class="string">&quot;Too Small!&quot;</span>),</span><br><span class="line">            Ordering::Greater =&gt; <span class="built_in">println!</span>(<span class="string">&quot;Too Big!&quot;</span>),</span><br><span class="line">            Ordering::Equal =&gt; &#123;</span><br><span class="line">                <span class="built_in">println!</span>(<span class="string">&quot;You Win!&quot;</span>);</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>参考：</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一-Rust安装&quot;&gt;&lt;a href=&quot;#一-Rust安装&quot; class=&quot;headerlink&quot; title=&quot;一 Rust安装&quot;&gt;&lt;/a&gt;一 Rust安装&lt;/h2&gt;&lt;p&gt;Rust安装极为简单，先下载rustup&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://</summary>
+      
+    
+    
+    
+    <category term="Rust" scheme="http://example.com/categories/Rust/"/>
+    
+    
+    <category term="Rust" scheme="http://example.com/tags/Rust/"/>
+    
+  </entry>
   
   <entry>
     <title>Manjaro上安装mysql</title>
@@ -91,30 +116,6 @@
   </entry>
   
   <entry>
-    <title>控制缩放以及多倍图</title>
-    <link href="http://example.com/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/"/>
-    <id>http://example.com/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/</id>
-    <published>2022-02-28T13:26:04.236Z</published>
-    <updated>2021-11-13T11:16:42.385Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一-系统缩放"><a href="#一-系统缩放" class="headerlink" title="一 系统缩放"></a>一 系统缩放</h2><p>Javafx针对系统缩放是有优化的，比如在我的小新pro13上默认缩放比例为200%，因此在默认情况下如下的代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">primaryStage.setWidth(<span class="number">500</span>);</span><br><span class="line">primaryStage.setHeight(<span class="number">500</span>);</span><br></pre></td></tr></table></figure><p>展示的宽高是1000x1000,而我们是否可以自己来进行控制呢？也就是很多桌面程序常见的功能：<code>是否禁止屏幕DPI适配</code></p><p>在Javafx中为我们提供了两个虚拟机参数：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  禁止屏幕缩放</span></span><br><span class="line">-Dprism.allowhidpi = <span class="literal">false</span></span><br><span class="line"><span class="comment"># 默认起始缩放比例</span></span><br><span class="line">：-Dglass.win.minHiDPI = 1</span><br></pre></td></tr></table></figure><p>因此只需要在虚拟机启动的时候加上这个参数即可，而Java为我们提供了两种方式，分别是键值对，以及传入一个Properties对象，因此就可以将参数写入Properties文件中，就可以保存用户的设置。</p><p><img src="https://md.yangcc.top/image-20211113180315027.png" alt="image-20211113180315027"></p><h2 id="二-多倍图"><a href="#二-多倍图" class="headerlink" title="二 多倍图"></a>二 多倍图</h2><p>多倍图还是对系统缩放的优化，因为如果图片是固定大小的，如果高分屏缩放很可能是150%，200%，那这样图片就会出现模糊的效果，因此Javafx对此进行了优化只要图片名称后加入<code>@2x</code>或者<code>@3x</code>,注意只能是整数倍，就可以实现自动切换,比如下面的代码，加载的其实是<code>java@2x.png</code>这张图片。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">primaryStage.getIcons().add(</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Image</span>(getClass().getResource(<span class="string">&quot;/img/java.png&quot;</span>).toExternalForm())</span><br><span class="line">);</span><br></pre></td></tr></table></figure><p>注意加载图片的方式要使用非流的方式，因为如果是流就固定的使用那张图片了。</p><p><img src="https://md.yangcc.top/image-20211113191416012.png" alt="image-20211113191416012"></p><h3 id="三-参考"><a href="#三-参考" class="headerlink" title="三 参考"></a>三 参考</h3><p>感谢B站LeeWyatt老师的讲解，这是视频地址 <a href="https://www.bilibili.com/video/BV113411k7Zr">https://www.bilibili.com/video/BV113411k7Zr</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;一-系统缩放&quot;&gt;&lt;a href=&quot;#一-系统缩放&quot; class=&quot;headerlink&quot; title=&quot;一 系统缩放&quot;&gt;&lt;/a&gt;一 系统缩放&lt;/h2&gt;&lt;p&gt;Javafx针对系统缩放是有优化的，比如在我的小新pro13上默认缩放比例为200%，因此在默认情况下如下的</summary>
-      
-    
-    
-    
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
-    
-    
-    <category term="Javafx" scheme="http://example.com/tags/Javafx/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Volatile关键字</title>
     <link href="http://example.com/2022/02/28/volatile%E5%85%B3%E9%94%AE%E5%AD%97/"/>
     <id>http://example.com/2022/02/28/volatile%E5%85%B3%E9%94%AE%E5%AD%97/</id>
@@ -135,6 +136,30 @@
     
     
     <category term="Java" scheme="http://example.com/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>控制缩放以及多倍图</title>
+    <link href="http://example.com/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/"/>
+    <id>http://example.com/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/</id>
+    <published>2022-02-28T13:26:04.236Z</published>
+    <updated>2021-11-13T11:16:42.385Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一-系统缩放"><a href="#一-系统缩放" class="headerlink" title="一 系统缩放"></a>一 系统缩放</h2><p>Javafx针对系统缩放是有优化的，比如在我的小新pro13上默认缩放比例为200%，因此在默认情况下如下的代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">primaryStage.setWidth(<span class="number">500</span>);</span><br><span class="line">primaryStage.setHeight(<span class="number">500</span>);</span><br></pre></td></tr></table></figure><p>展示的宽高是1000x1000,而我们是否可以自己来进行控制呢？也就是很多桌面程序常见的功能：<code>是否禁止屏幕DPI适配</code></p><p>在Javafx中为我们提供了两个虚拟机参数：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  禁止屏幕缩放</span></span><br><span class="line">-Dprism.allowhidpi = <span class="literal">false</span></span><br><span class="line"><span class="comment"># 默认起始缩放比例</span></span><br><span class="line">：-Dglass.win.minHiDPI = 1</span><br></pre></td></tr></table></figure><p>因此只需要在虚拟机启动的时候加上这个参数即可，而Java为我们提供了两种方式，分别是键值对，以及传入一个Properties对象，因此就可以将参数写入Properties文件中，就可以保存用户的设置。</p><p><img src="https://md.yangcc.top/image-20211113180315027.png" alt="image-20211113180315027"></p><h2 id="二-多倍图"><a href="#二-多倍图" class="headerlink" title="二 多倍图"></a>二 多倍图</h2><p>多倍图还是对系统缩放的优化，因为如果图片是固定大小的，如果高分屏缩放很可能是150%，200%，那这样图片就会出现模糊的效果，因此Javafx对此进行了优化只要图片名称后加入<code>@2x</code>或者<code>@3x</code>,注意只能是整数倍，就可以实现自动切换,比如下面的代码，加载的其实是<code>java@2x.png</code>这张图片。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">primaryStage.getIcons().add(</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Image</span>(getClass().getResource(<span class="string">&quot;/img/java.png&quot;</span>).toExternalForm())</span><br><span class="line">);</span><br></pre></td></tr></table></figure><p>注意加载图片的方式要使用非流的方式，因为如果是流就固定的使用那张图片了。</p><p><img src="https://md.yangcc.top/image-20211113191416012.png" alt="image-20211113191416012"></p><h3 id="三-参考"><a href="#三-参考" class="headerlink" title="三 参考"></a>三 参考</h3><p>感谢B站LeeWyatt老师的讲解，这是视频地址 <a href="https://www.bilibili.com/video/BV113411k7Zr">https://www.bilibili.com/video/BV113411k7Zr</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一-系统缩放&quot;&gt;&lt;a href=&quot;#一-系统缩放&quot; class=&quot;headerlink&quot; title=&quot;一 系统缩放&quot;&gt;&lt;/a&gt;一 系统缩放&lt;/h2&gt;&lt;p&gt;Javafx针对系统缩放是有优化的，比如在我的小新pro13上默认缩放比例为200%，因此在默认情况下如下的</summary>
+      
+    
+    
+    
+    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    
+    
+    <category term="Javafx" scheme="http://example.com/tags/Javafx/"/>
     
   </entry>
   
