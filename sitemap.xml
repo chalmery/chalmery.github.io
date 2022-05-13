@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2022/05/14/Rust%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</loc>
+    <loc>https://chalmery.github.io/2022/05/14/Rust%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</loc>
     
     <lastmod>2022-05-13</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/03/14/Rust%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</loc>
+    <loc>https://chalmery.github.io/2022/03/14/Rust%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</loc>
     
     <lastmod>2022-03-14</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/03/12/Manjaro%E4%B8%8A%E5%AE%89%E8%A3%85mysql/</loc>
+    <loc>https://chalmery.github.io/2022/03/12/Manjaro%E4%B8%8A%E5%AE%89%E8%A3%85mysql/</loc>
     
     <lastmod>2022-03-12</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/03/06/%E5%9C%A8Manjaro%E4%B8%8A%E9%85%8D%E7%BD%AEconky/</loc>
+    <loc>https://chalmery.github.io/2022/03/06/%E5%9C%A8Manjaro%E4%B8%8A%E9%85%8D%E7%BD%AEconky/</loc>
     
     <lastmod>2022-03-06</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/02/28/ElasticSearch/</loc>
+    <loc>https://chalmery.github.io/2022/02/28/ElasticSearch/</loc>
     
     <lastmod>2022-02-28</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/</loc>
+    <loc>https://chalmery.github.io/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/</loc>
     
     <lastmod>2021-11-13</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/02/28/volatile%E5%85%B3%E9%94%AE%E5%AD%97/</loc>
+    <loc>https://chalmery.github.io/2022/02/28/volatile%E5%85%B3%E9%94%AE%E5%AD%97/</loc>
     
     <lastmod>2021-11-13</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/02/28/%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4/</loc>
+    <loc>https://chalmery.github.io/2022/02/28/%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4/</loc>
     
     <lastmod>2021-11-13</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>https://chalmery.github.io/about/index.html</loc>
     
     <lastmod>2021-09-12</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/tags/index.html</loc>
+    <loc>https://chalmery.github.io/tags/index.html</loc>
     
     <lastmod>2021-09-12</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/repository/index.html</loc>
+    <loc>https://chalmery.github.io/links/index.html</loc>
     
     <lastmod>2021-09-12</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/links/index.html</loc>
+    <loc>https://chalmery.github.io/repository/index.html</loc>
     
     <lastmod>2021-09-12</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/categories/index.html</loc>
+    <loc>https://chalmery.github.io/categories/index.html</loc>
     
     <lastmod>2021-09-12</lastmod>
     
@@ -120,7 +120,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://chalmery.github.io/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -128,28 +128,28 @@
 
   
   <url>
-    <loc>http://example.com/tags/Java/</loc>
+    <loc>https://chalmery.github.io/tags/Java/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Rust/</loc>
+    <loc>https://chalmery.github.io/tags/Linux/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Linux/</loc>
+    <loc>https://chalmery.github.io/tags/Rust/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Javafx/</loc>
+    <loc>https://chalmery.github.io/tags/Javafx/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -158,21 +158,21 @@
 
   
   <url>
-    <loc>http://example.com/categories/Java/</loc>
+    <loc>https://chalmery.github.io/categories/Java/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/Rust/</loc>
+    <loc>https://chalmery.github.io/categories/Linux/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/categories/Linux/</loc>
+    <loc>https://chalmery.github.io/categories/Rust/</loc>
     <lastmod>2022-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

@@ -3,11 +3,11 @@
   <title>yangccBlog</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://chalmery.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://chalmery.github.io/"/>
   <updated>2022-05-13T16:10:53.383Z</updated>
-  <id>http://example.com/</id>
+  <id>https://chalmery.github.io/</id>
   
   <author>
     <name>杨超超</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Rust学习(二)：所有权</title>
-    <link href="http://example.com/2022/05/14/Rust%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/"/>
-    <id>http://example.com/2022/05/14/Rust%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</id>
+    <link href="https://chalmery.github.io/2022/05/14/Rust%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/"/>
+    <id>https://chalmery.github.io/2022/05/14/Rust%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</id>
     <published>2022-05-13T16:06:20.359Z</published>
     <updated>2022-05-13T16:10:53.383Z</updated>
     
@@ -36,17 +36,17 @@
     
     
     
-    <category term="Rust" scheme="http://example.com/categories/Rust/"/>
+    <category term="Rust" scheme="https://chalmery.github.io/categories/Rust/"/>
     
     
-    <category term="Rust" scheme="http://example.com/tags/Rust/"/>
+    <category term="Rust" scheme="https://chalmery.github.io/tags/Rust/"/>
     
   </entry>
   
   <entry>
     <title>Rust学习(一)：猜数字游戏</title>
-    <link href="http://example.com/2022/03/14/Rust%E5%AD%A6%E4%B9%A0(%E4%B8%80)/"/>
-    <id>http://example.com/2022/03/14/Rust%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</id>
+    <link href="https://chalmery.github.io/2022/03/14/Rust%E5%AD%A6%E4%B9%A0(%E4%B8%80)/"/>
+    <id>https://chalmery.github.io/2022/03/14/Rust%E5%AD%A6%E4%B9%A0(%E4%B8%80)/</id>
     <published>2022-03-14T14:00:28.209Z</published>
     <updated>2022-03-14T14:09:45.296Z</updated>
     
@@ -61,17 +61,17 @@
     
     
     
-    <category term="Rust" scheme="http://example.com/categories/Rust/"/>
+    <category term="Rust" scheme="https://chalmery.github.io/categories/Rust/"/>
     
     
-    <category term="Rust" scheme="http://example.com/tags/Rust/"/>
+    <category term="Rust" scheme="https://chalmery.github.io/tags/Rust/"/>
     
   </entry>
   
   <entry>
     <title>Manjaro上安装mysql</title>
-    <link href="http://example.com/2022/03/12/Manjaro%E4%B8%8A%E5%AE%89%E8%A3%85mysql/"/>
-    <id>http://example.com/2022/03/12/Manjaro%E4%B8%8A%E5%AE%89%E8%A3%85mysql/</id>
+    <link href="https://chalmery.github.io/2022/03/12/Manjaro%E4%B8%8A%E5%AE%89%E8%A3%85mysql/"/>
+    <id>https://chalmery.github.io/2022/03/12/Manjaro%E4%B8%8A%E5%AE%89%E8%A3%85mysql/</id>
     <published>2022-03-12T06:51:30.397Z</published>
     <updated>2022-03-12T06:57:38.832Z</updated>
     
@@ -86,17 +86,17 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://chalmery.github.io/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://chalmery.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>在Manjaro上配置conky</title>
-    <link href="http://example.com/2022/03/06/%E5%9C%A8Manjaro%E4%B8%8A%E9%85%8D%E7%BD%AEconky/"/>
-    <id>http://example.com/2022/03/06/%E5%9C%A8Manjaro%E4%B8%8A%E9%85%8D%E7%BD%AEconky/</id>
+    <link href="https://chalmery.github.io/2022/03/06/%E5%9C%A8Manjaro%E4%B8%8A%E9%85%8D%E7%BD%AEconky/"/>
+    <id>https://chalmery.github.io/2022/03/06/%E5%9C%A8Manjaro%E4%B8%8A%E9%85%8D%E7%BD%AEconky/</id>
     <published>2022-03-06T02:56:14.877Z</published>
     <updated>2022-03-06T03:12:31.952Z</updated>
     
@@ -111,17 +111,17 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://chalmery.github.io/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://chalmery.github.io/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Elasticsearch</title>
-    <link href="http://example.com/2022/02/28/ElasticSearch/"/>
-    <id>http://example.com/2022/02/28/ElasticSearch/</id>
+    <link href="https://chalmery.github.io/2022/02/28/ElasticSearch/"/>
+    <id>https://chalmery.github.io/2022/02/28/ElasticSearch/</id>
     <published>2022-02-28T13:26:28.982Z</published>
     <updated>2022-02-28T15:05:06.619Z</updated>
     
@@ -135,17 +135,17 @@
     
     
     
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    <category term="Java" scheme="https://chalmery.github.io/categories/Java/"/>
     
     
-    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    <category term="Java" scheme="https://chalmery.github.io/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>Volatile关键字</title>
-    <link href="http://example.com/2022/02/28/volatile%E5%85%B3%E9%94%AE%E5%AD%97/"/>
-    <id>http://example.com/2022/02/28/volatile%E5%85%B3%E9%94%AE%E5%AD%97/</id>
+    <link href="https://chalmery.github.io/2022/02/28/volatile%E5%85%B3%E9%94%AE%E5%AD%97/"/>
+    <id>https://chalmery.github.io/2022/02/28/volatile%E5%85%B3%E9%94%AE%E5%AD%97/</id>
     <published>2022-02-28T13:26:04.236Z</published>
     <updated>2021-11-13T09:53:39.926Z</updated>
     
@@ -159,17 +159,41 @@
     
     
     
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    <category term="Java" scheme="https://chalmery.github.io/categories/Java/"/>
     
     
-    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    <category term="Java" scheme="https://chalmery.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>控制缩放以及多倍图</title>
+    <link href="https://chalmery.github.io/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/"/>
+    <id>https://chalmery.github.io/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/</id>
+    <published>2022-02-28T13:26:04.236Z</published>
+    <updated>2021-11-13T11:16:42.385Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一-系统缩放"><a href="#一-系统缩放" class="headerlink" title="一 系统缩放"></a>一 系统缩放</h2><p>Javafx针对系统缩放是有优化的，比如在我的小新pro13上默认缩放比例为200%，因此在默认情况下如下的代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">primaryStage.setWidth(<span class="number">500</span>);</span><br><span class="line">primaryStage.setHeight(<span class="number">500</span>);</span><br></pre></td></tr></table></figure><p>展示的宽高是1000x1000,而我们是否可以自己来进行控制呢？也就是很多桌面程序常见的功能：<code>是否禁止屏幕DPI适配</code></p><p>在Javafx中为我们提供了两个虚拟机参数：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  禁止屏幕缩放</span></span><br><span class="line">-Dprism.allowhidpi = <span class="literal">false</span></span><br><span class="line"><span class="comment"># 默认起始缩放比例</span></span><br><span class="line">：-Dglass.win.minHiDPI = 1</span><br></pre></td></tr></table></figure><p>因此只需要在虚拟机启动的时候加上这个参数即可，而Java为我们提供了两种方式，分别是键值对，以及传入一个Properties对象，因此就可以将参数写入Properties文件中，就可以保存用户的设置。</p><p><img src="https://md.yangcc.top/image-20211113180315027.png" alt="image-20211113180315027"></p><h2 id="二-多倍图"><a href="#二-多倍图" class="headerlink" title="二 多倍图"></a>二 多倍图</h2><p>多倍图还是对系统缩放的优化，因为如果图片是固定大小的，如果高分屏缩放很可能是150%，200%，那这样图片就会出现模糊的效果，因此Javafx对此进行了优化只要图片名称后加入<code>@2x</code>或者<code>@3x</code>,注意只能是整数倍，就可以实现自动切换,比如下面的代码，加载的其实是<code>java@2x.png</code>这张图片。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">primaryStage.getIcons().add(</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Image</span>(getClass().getResource(<span class="string">&quot;/img/java.png&quot;</span>).toExternalForm())</span><br><span class="line">);</span><br></pre></td></tr></table></figure><p>注意加载图片的方式要使用非流的方式，因为如果是流就固定的使用那张图片了。</p><p><img src="https://md.yangcc.top/image-20211113191416012.png" alt="image-20211113191416012"></p><h3 id="三-参考"><a href="#三-参考" class="headerlink" title="三 参考"></a>三 参考</h3><p>感谢B站LeeWyatt老师的讲解，这是视频地址 <a href="https://www.bilibili.com/video/BV113411k7Zr">https://www.bilibili.com/video/BV113411k7Zr</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一-系统缩放&quot;&gt;&lt;a href=&quot;#一-系统缩放&quot; class=&quot;headerlink&quot; title=&quot;一 系统缩放&quot;&gt;&lt;/a&gt;一 系统缩放&lt;/h2&gt;&lt;p&gt;Javafx针对系统缩放是有优化的，比如在我的小新pro13上默认缩放比例为200%，因此在默认情况下如下的</summary>
+      
+    
+    
+    
+    <category term="Java" scheme="https://chalmery.github.io/categories/Java/"/>
+    
+    
+    <category term="Javafx" scheme="https://chalmery.github.io/tags/Javafx/"/>
     
   </entry>
   
   <entry>
     <title>类型擦除</title>
-    <link href="http://example.com/2022/02/28/%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4/"/>
-    <id>http://example.com/2022/02/28/%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4/</id>
+    <link href="https://chalmery.github.io/2022/02/28/%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4/"/>
+    <id>https://chalmery.github.io/2022/02/28/%E7%B1%BB%E5%9E%8B%E6%93%A6%E9%99%A4/</id>
     <published>2022-02-28T13:26:04.236Z</published>
     <updated>2021-11-13T09:53:31.016Z</updated>
     
@@ -184,34 +208,10 @@
     
     
     
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    <category term="Java" scheme="https://chalmery.github.io/categories/Java/"/>
     
     
-    <category term="Java" scheme="http://example.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>控制缩放以及多倍图</title>
-    <link href="http://example.com/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/"/>
-    <id>http://example.com/2022/02/28/%E7%B3%BB%E7%BB%9F%E7%BC%A9%E6%94%BE%E5%92%8C%E5%A4%9A%E5%80%8D%E5%9B%BE/</id>
-    <published>2022-02-28T13:26:04.236Z</published>
-    <updated>2021-11-13T11:16:42.385Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="一-系统缩放"><a href="#一-系统缩放" class="headerlink" title="一 系统缩放"></a>一 系统缩放</h2><p>Javafx针对系统缩放是有优化的，比如在我的小新pro13上默认缩放比例为200%，因此在默认情况下如下的代码：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">primaryStage.setWidth(<span class="number">500</span>);</span><br><span class="line">primaryStage.setHeight(<span class="number">500</span>);</span><br></pre></td></tr></table></figure><p>展示的宽高是1000x1000,而我们是否可以自己来进行控制呢？也就是很多桌面程序常见的功能：<code>是否禁止屏幕DPI适配</code></p><p>在Javafx中为我们提供了两个虚拟机参数：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#  禁止屏幕缩放</span></span><br><span class="line">-Dprism.allowhidpi = <span class="literal">false</span></span><br><span class="line"><span class="comment"># 默认起始缩放比例</span></span><br><span class="line">：-Dglass.win.minHiDPI = 1</span><br></pre></td></tr></table></figure><p>因此只需要在虚拟机启动的时候加上这个参数即可，而Java为我们提供了两种方式，分别是键值对，以及传入一个Properties对象，因此就可以将参数写入Properties文件中，就可以保存用户的设置。</p><p><img src="https://md.yangcc.top/image-20211113180315027.png" alt="image-20211113180315027"></p><h2 id="二-多倍图"><a href="#二-多倍图" class="headerlink" title="二 多倍图"></a>二 多倍图</h2><p>多倍图还是对系统缩放的优化，因为如果图片是固定大小的，如果高分屏缩放很可能是150%，200%，那这样图片就会出现模糊的效果，因此Javafx对此进行了优化只要图片名称后加入<code>@2x</code>或者<code>@3x</code>,注意只能是整数倍，就可以实现自动切换,比如下面的代码，加载的其实是<code>java@2x.png</code>这张图片。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">primaryStage.getIcons().add(</span><br><span class="line">    <span class="keyword">new</span> <span class="title class_">Image</span>(getClass().getResource(<span class="string">&quot;/img/java.png&quot;</span>).toExternalForm())</span><br><span class="line">);</span><br></pre></td></tr></table></figure><p>注意加载图片的方式要使用非流的方式，因为如果是流就固定的使用那张图片了。</p><p><img src="https://md.yangcc.top/image-20211113191416012.png" alt="image-20211113191416012"></p><h3 id="三-参考"><a href="#三-参考" class="headerlink" title="三 参考"></a>三 参考</h3><p>感谢B站LeeWyatt老师的讲解，这是视频地址 <a href="https://www.bilibili.com/video/BV113411k7Zr">https://www.bilibili.com/video/BV113411k7Zr</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;一-系统缩放&quot;&gt;&lt;a href=&quot;#一-系统缩放&quot; class=&quot;headerlink&quot; title=&quot;一 系统缩放&quot;&gt;&lt;/a&gt;一 系统缩放&lt;/h2&gt;&lt;p&gt;Javafx针对系统缩放是有优化的，比如在我的小新pro13上默认缩放比例为200%，因此在默认情况下如下的</summary>
-      
-    
-    
-    
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
-    
-    
-    <category term="Javafx" scheme="http://example.com/tags/Javafx/"/>
+    <category term="Java" scheme="https://chalmery.github.io/tags/Java/"/>
     
   </entry>
   
