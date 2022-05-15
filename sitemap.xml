@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chalmery.github.io/2022/05/15/Rust%E5%AD%A6%E4%B9%A0(%E4%B8%89)/</loc>
+    
+    <lastmod>2022-05-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chalmery.github.io/2022/05/14/Rust%E5%AD%A6%E4%B9%A0(%E4%BA%8C)/</loc>
     
-    <lastmod>2022-05-13</lastmod>
+    <lastmod>2022-05-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -121,36 +130,36 @@
 
   <url>
     <loc>https://chalmery.github.io/</loc>
-    <lastmod>2022-05-13</lastmod>
+    <lastmod>2022-05-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://chalmery.github.io/tags/Java/</loc>
-    <lastmod>2022-05-13</lastmod>
+    <loc>https://chalmery.github.io/tags/Rust/</loc>
+    <lastmod>2022-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chalmery.github.io/tags/Linux/</loc>
-    <lastmod>2022-05-13</lastmod>
+    <lastmod>2022-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://chalmery.github.io/tags/Rust/</loc>
-    <lastmod>2022-05-13</lastmod>
+    <loc>https://chalmery.github.io/tags/Java/</loc>
+    <lastmod>2022-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chalmery.github.io/tags/Javafx/</loc>
-    <lastmod>2022-05-13</lastmod>
+    <lastmod>2022-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -158,22 +167,22 @@
 
   
   <url>
-    <loc>https://chalmery.github.io/categories/Java/</loc>
-    <lastmod>2022-05-13</lastmod>
+    <loc>https://chalmery.github.io/categories/Rust/</loc>
+    <lastmod>2022-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://chalmery.github.io/categories/Linux/</loc>
-    <lastmod>2022-05-13</lastmod>
+    <lastmod>2022-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://chalmery.github.io/categories/Rust/</loc>
-    <lastmod>2022-05-13</lastmod>
+    <loc>https://chalmery.github.io/categories/Java/</loc>
+    <lastmod>2022-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
